@@ -1,5 +1,11 @@
 # hardhat
 
+## 2.8.3
+
+### Patch Changes
+
+- e2eb07cc: Use 40s as the default value for mocha's timeout and for the localhost network's timeout (#1549).
+
 ## 2.8.2
 
 ### Patch Changes
