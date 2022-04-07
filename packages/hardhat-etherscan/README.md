@@ -162,13 +162,19 @@ module.exports = {
         // avalanche
         avalanche: "YOUR_SNOWTRACE_API_KEY",
         avalancheFujiTestnet: "YOUR_SNOWTRACE_API_KEY",
-        // moonriver
+        // moonbeam
+        moonbeam: "YOUR_MOONBEAM_MOONSCAN_API_KEY"
         moonriver: "YOUR_MOONRIVER_MOONSCAN_API_KEY",
-        moonbaseAlpha: "YOUR_MOONRIVER_MOONSCAN_API_KEY",
+        moonbaseAlpha: "YOUR_MOONBEAM_MOONSCAN_API_KEY",
+        // harmony
+        harmony: "YOUR_HARMONY_API_KEY",
+        harmonyTest: "YOUR_HARMONY_API_KEY",
         // xdai and sokol don't need an API key, but you still need
         // to specify one; any string placeholder will work
         xdai: "api-key",
         sokol: "api-key",
+        aurora: "api-key",
+        auroraTestnet: "api-key",
     }
   }
 };

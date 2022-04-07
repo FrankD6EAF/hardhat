@@ -36,6 +36,14 @@ module.exports.communityPlugins = [
     tags: ["Security", "Upgrades", "OpenZeppelin"],
   },
   {
+    name: "hardhat-forta",
+    author: "Forta",
+    authorUrl: "https://forta.org/",
+    description:
+      "Quickly add security and operational alerting for your project using Forta: a decentralized monitoring network for Web3 systems.",
+    tags: ["Security", "Monitoring", "Alerting", "Forta"],
+  },
+  {
     name: "@tenderly/hardhat-tenderly",
     author: "Tenderly",
     authorUrl: "https://tenderly.co/",
@@ -117,6 +125,13 @@ module.exports.communityPlugins = [
     tags: ["Testing", "Coverage", "Hardhat plugin"],
   },
   {
+    name: "hardhat-gas-trackooor",
+    author: "d3or",
+    authorUrl: "https://github.com/d3or",
+    description: "Simple plugin to track gas on the transaction level.",
+    tags: ["Testing", "Gas", "Hardhat plugin"],
+  },
+  {
     name: "hardhat-gas-reporter",
     author: "Chris Gewecke",
     authorUrl: "https://github.com/cgewecke",
@@ -192,8 +207,9 @@ module.exports.communityPlugins = [
     name: "hardhat-tracer",
     author: "Soham Zemse",
     authorUrl: "https://github.com/zemse/",
-    description: "See emitted events during your hardhat tests in the console",
-    tags: ["Events", "Logs", "Trace", "Console", "Testing"],
+    description:
+      "See internal transactions, events and storage operations during your hardhat tests in the console",
+    tags: ["EVM", "Events", "Logs", "Trace", "Console", "Testing"],
   },
   {
     name: "hardhat-circom",
@@ -265,21 +281,6 @@ module.exports.communityPlugins = [
     tags: ["Testing", "Mocking"],
   },
   {
-    name: "hardhat-secure-signer",
-    author: "Anthony Daniel Martin",
-    authorUrl: "https://github.com/anthonymartin",
-    description:
-      "Enhanced hardhat credential security using an interactive prompt and password-encrypted credentials",
-    tags: [
-      "private key",
-      "encryption",
-      "security",
-      "developer experience",
-      "convenience",
-      "ethers.js",
-    ],
-  },
-  {
     name: "xdeployer",
     author: "Pascal Marco Caversaccio",
     authorUrl: "https://github.com/pcaversaccio",
@@ -326,6 +327,109 @@ module.exports.communityPlugins = [
     description:
       "Hardhat plugin for solidity contract verification on Blockscout block explorer.",
     tags: ["Blockscout", "Deployment", "Solidity", "Verification"],
+  },
+  {
+    name: "@georacle/hardhat-georacle",
+    author: "Georacle",
+    authorUrl: "https://georacle.io",
+    description:
+      "A Hardhat plugin for integrating smart contracts with Georacle.",
+    tags: ["Georacle", "oracle", "geospatial"],
+  },
+  {
+    name: "@muzamint/hardhat-etherspot",
+    author: "muzamint",
+    authorUrl: "https://github.com/muzamint",
+    description: "Hardhat TypeScript plugin for Etherspot",
+    tags: ["smart contract wallet"],
+  },
+  {
+    name: "hardhat-multibaas-plugin",
+    author: "Curvegrid",
+    authorUrl: "https://www.curvegrid.com/",
+    description: "Integrate MultiBaas into Hardhat's workflow!",
+    tags: ["middleware", "ethereum", "OMG"],
+  },
+  {
+    name: "@mangrovedao/hardhat-test-solidity",
+    author: "Mangrove",
+    authorUrl: "https://mangrove.exchange/",
+    description: "Hardhat plugin for writing tests in solidity",
+    tags: ["solidity tests"],
+  },
+  {
+    name: "@reef-defi/hardhat-reef",
+    author: "Reef Chain",
+    authorUrl: "https://reef.io/",
+    description:
+      "Hardhat Reef plugin for interacting with contracts on the Reef chain",
+    tags: ["Reef Chain"],
+  },
+  {
+    name: "hardhat-diamond-abi",
+    author: "Project Sophon",
+    authorUrl: "https://github.com/projectsophon",
+    description:
+      "Hardhat plugin to combine multiple ABIs into a Diamond ABI artifact",
+    tags: ["diamond standard"],
+  },
+  {
+    name: "@idle-finance/hardhat-proposals-plugin",
+    author: "Idle Finance",
+    authorUrl: "https://idle.finance/",
+    description: "A Hardhat plugin for working with on-chain proposals",
+    tags: ["governance", "proposals", "simulation"],
+  },
+  {
+    name: "@shardlabs/starknet-hardhat-plugin",
+    author: "Shard Labs",
+    authorUrl: "https://shardlabs.io/",
+    description:
+      "A plugin for integrating Starknet tools into Hardhat projects",
+    tags: ["starknet", "cairo", "layer two"],
+  },
+  {
+    name: "uniswap-v3-deploy-plugin",
+    author: "Uniswap",
+    authorUrl: "https://uniswap.org/",
+    description: "Hardhat plugin for Uniswap V3 deployment",
+    tags: ["uniswap", "testing", "local deployment"],
+  },
+  {
+    name: "@unlock-protocol/hardhat-plugin",
+    author: "Unlock Inc",
+    authorUrl: "http://unlock-protocol.com/",
+    description: "Hardhat plugin for Unlock Protocol deployments.",
+    tags: ["unlock", "nft", "memberships", "udt", "testing", "deployment"],
+  },
+  {
+    name: "hardhat-deploy-tenderly",
+    author: "Ronan Sandford",
+    authorUrl: "https://github.com/wighawag",
+    description: "A plugin to push contracts to tenderly",
+    tags: ["Deployment", "Testing", "Tenderly", "Verification"],
+  },
+  {
+    name: "hardhat-laika",
+    author: "Laika Blockchain Lab",
+    authorUrl: "https://github.com/laika-lab/hardhat-laika",
+    description: "Hardhat plugin to sync your compiled contract with Laika",
+    tags: ["Tasks", "Laika"],
+  },
+  {
+    name: "hardhat-network-metadata",
+    author: "Focal Labs Inc.",
+    authorUrl: "https://github.com/krruzic/hardhat-network-metadata",
+    description:
+      "Hardhat plugin to allow adding any extra data to your network configuration",
+    tags: ["Metadata", "Testing", "Tasks", "Config"],
+  },
+  {
+    name: "hardhat-exposed",
+    author: "Francisco Giordano",
+    authorUrl: "https://github.com/frangio",
+    description: "Automatically expose internal Solidity functions for testing",
+    tags: ["Solidity", "Testing"],
   },
 ];
 

@@ -25,12 +25,18 @@ type Chain =
   // avalanche
   | "avalanche"
   | "avalancheFujiTestnet"
-  // moonriver
+  // moonbeam
+  | "moonbeam"
   | "moonriver"
   | "moonbaseAlpha"
+  | "harmony"
+  | "harmonyTest"
   // xdai
   | "xdai"
-  | "sokol";
+  | "sokol"
+  // aurora
+  | "aurora"
+  | "auroraTestnet";
 
 export type ChainConfig = {
   [Network in Chain]: EtherscanChainConfig;

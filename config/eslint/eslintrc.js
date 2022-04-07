@@ -162,6 +162,7 @@ module.exports = {
       "error",
       {
         groups: [
+          "type",
           "object",
           ["builtin", "external"],
           "parent",
@@ -206,5 +207,8 @@ module.exports = {
       },
     ],
     "use-isnan": "error",
+    "no-restricted-imports": ["error", {
+      patterns: ["hardhat/src", "@nomiclabs/*/src"]
+    }],
   },
 };
